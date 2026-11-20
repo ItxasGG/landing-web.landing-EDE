@@ -1590,9 +1590,9 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--color-acento-boton);
+  background: #25D366; /* Verde oficial de WhatsApp */
   color: var(--color-blanco);
-  border: 1px solid var(--color-acento-boton);
+  border: 1px solid #25D366;
   transition: var(--transition);
 }
 
@@ -1602,7 +1602,8 @@ a {
 }
 
 .whatsapp-floating-btn:hover {
-  background: var(--color-acento-hover);
+  background: #1EBE5A;
+  border-color: #1EBE5A;
   transform: translateY(-2px);
 }
 
