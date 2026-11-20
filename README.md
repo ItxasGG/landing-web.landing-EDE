@@ -8,7 +8,7 @@ Landing estática (HTML, CSS y JavaScript sin frameworks) para los servicios de 
 index.html     Página
 styles.css     Estilos (mobile first)
 script.js      Mejoras ligeras (acordeón y animaciones)
-_headers       Cabeceras de seguridad y caché para Cloudflare Pages
+_headers       Cabeceras de seguridad y caché (los navegadores comprueban en cada visita si hay cambios)
 assets/        Imágenes
 ```
 
