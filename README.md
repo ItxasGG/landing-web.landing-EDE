@@ -12,15 +12,10 @@ _headers       Cabeceras de seguridad y caché para Cloudflare Pages
 assets/        Imágenes
 ```
 
-## Antes de publicar
+## Imágenes y dominio
 
-1. Añade estas imágenes en `assets/`:
-   - `logo-rojo.png` (cabecera)
-   - `logo-negro.png` (pie)
-   - `banner.png` (hero, formato apaisado 3:1 aprox.)
-   - `favicon.png` (cuadrado, 512 × 512 px recomendado)
-   - `og-image.png` (1200 × 630 px)
-2. En `index.html`, sustituye `[DOMINIO]` por el dominio final, sin `https://` (por ejemplo, `web.estrategiadigitalestrella.com`).
+- Imágenes en `assets/`: `logo-rojo.png` (cabecera), `logo-negro.png` (pie, versión blanca para fondo negro), `banner.png` (hero), `favicon.png` (512 × 512 px) y `og-image.png` (1200 × 630 px, para redes).
+- Dominio configurado en `index.html`: `web.estrategiadigitalestrella.com`. Si cambia, busca y sustituye esa dirección.
 
 ## Publicar en Cloudflare Pages
 
@@ -31,7 +26,7 @@ assets/        Imágenes
    - Comando de compilación: *(vacío)*
    - Directorio de salida: `/`
 4. Pulsa **Guardar e implementar**. Cada `push` a `main` publicará la nueva versión automáticamente.
-5. Para usar tu dominio, entra en el proyecto › **Dominios personalizados** › **Configurar un dominio** y sigue los pasos.
+5. Para usar el dominio, entra en el proyecto › **Dominios personalizados** › **Configurar un dominio**, escribe `web.estrategiadigitalestrella.com` y sigue los pasos.
 
 ## Vista previa en local
 
