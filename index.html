@@ -40,15 +40,151 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Estrategia Digital Estrella",
-    "url": "https://web.estrategiadigitalestrella.com/",
-    "logo": "https://web.estrategiadigitalestrella.com/assets/logo-rojo.png",
-    "image": "https://web.estrategiadigitalestrella.com/assets/og-image.png",
-    "description": "Diseñamos páginas web y landing pages a medida, sin plantillas, adaptadas a móvil y pensadas para conseguir clientes.",
-    "email": "estrategiadigitalestrella@gmail.com",
-    "telephone": "+34660337148",
-    "areaServed": "ES"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://web.estrategiadigitalestrella.com/#organizacion",
+        "name": "Estrategia Digital Estrella",
+        "url": "https://web.estrategiadigitalestrella.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://web.estrategiadigitalestrella.com/assets/logo-rojo.png"
+        },
+        "image": "https://web.estrategiadigitalestrella.com/assets/og-image.png",
+        "description": "Diseñamos páginas web y landing pages a medida, sin plantillas, adaptadas a móvil y pensadas para conseguir clientes.",
+        "email": "estrategiadigitalestrella@gmail.com",
+        "telephone": "+34 660 33 71 48",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+34 660 33 71 48",
+          "email": "estrategiadigitalestrella@gmail.com",
+          "availableLanguage": "es"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "sameAs": [
+          "https://www.instagram.com/estrategiadigitalestrella/",
+          "https://www.tiktok.com/@ede.estrategia.di",
+          "https://www.linkedin.com/company/144011262/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://web.estrategiadigitalestrella.com/#web",
+        "url": "https://web.estrategiadigitalestrella.com/",
+        "name": "Estrategia Digital Estrella",
+        "inLanguage": "es",
+        "publisher": {
+          "@id": "https://web.estrategiadigitalestrella.com/#organizacion"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://web.estrategiadigitalestrella.com/#pagina",
+        "url": "https://web.estrategiadigitalestrella.com/",
+        "name": "Diseño de páginas web y landing pages a medida | Estrategia Digital Estrella",
+        "description": "Diseñamos páginas web y landing pages a medida, sin plantillas, adaptadas a móvil y pensadas para conseguir clientes. Pide tu presupuesto personalizado.",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://web.estrategiadigitalestrella.com/#web"
+        },
+        "about": {
+          "@id": "https://web.estrategiadigitalestrella.com/#organizacion"
+        },
+        "primaryImageOfPage": "https://web.estrategiadigitalestrella.com/assets/og-image.png"
+      },
+      {
+        "@type": "Service",
+        "name": "Diseño de landing pages",
+        "serviceType": "Diseño de landing pages",
+        "provider": {
+          "@id": "https://web.estrategiadigitalestrella.com/#organizacion"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "description": "Una sola página pensada para que el visitante haga una acción concreta: pedir información, reservar, comprar o apuntarse."
+      },
+      {
+        "@type": "Service",
+        "name": "Diseño de páginas web",
+        "serviceType": "Diseño de páginas web",
+        "provider": {
+          "@id": "https://web.estrategiadigitalestrella.com/#organizacion"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "España"
+        },
+        "description": "Varias secciones para presentar tu negocio con calma: quién eres, qué ofreces, cómo trabajas y cómo contactar contigo."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://web.estrategiadigitalestrella.com/#preguntas",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Usáis plantillas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Cada web y cada landing se diseña desde cero con tu marca, tus contenidos y tus objetivos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué diferencia hay entre una landing page y una página web?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La landing es una sola página con un objetivo concreto, como captar contactos o vender un servicio. La web tiene varias secciones y presenta tu negocio de forma completa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de lo que necesites. Por eso preparamos un presupuesto personalizado para cada proyecto, sin compromiso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tarda?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende de la complejidad de la web o la landing. El plazo te lo indicamos en el presupuesto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tengo que tener preparados los textos y las fotos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No es imprescindible. Nos cuentas cómo es tu negocio y te orientamos sobre los contenidos que necesitas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se verá bien en el móvil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Todas nuestras webs y landings se adaptan a móvil, tablet y ordenador."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Podré hacer cambios más adelante?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. En el presupuesto te explicamos cómo funcionan las actualizaciones."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -84,6 +220,8 @@
       <symbol id="i-stethoscope" viewBox="0 0 24 24"><path d="M6 4h-1a2 2 0 0 0 -2 2v3.5a5.5 5.5 0 0 0 11 0v-3.5a2 2 0 0 0 -2 -2h-1"/><path d="M8 15a6 6 0 1 0 12 0v-3"/><path d="M11 3v2M6 3v2"/><path d="M20 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/></symbol>
       <symbol id="i-school" viewBox="0 0 24 24"><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"/><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"/></symbol>
       <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M12 7v5l3 3"/></symbol>
+      <symbol id="i-search-off" viewBox="0 0 24 24"><path d="M5.039 5.062a7 7 0 0 0 9.91 9.89m1.584 -2.434a7 7 0 0 0 -9.038 -9.057"/><path d="M3 3l18 18"/><path d="M15 15l6 6" /></symbol>
+      <symbol id="i-search-ai" viewBox="0 0 24 24"><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/><path d="M21 21l-6 -6"/><path d="M10 6.5l.9 2.6l2.6 .9l-2.6 .9l-.9 2.6l-.9 -2.6l-2.6 -.9l2.6 -.9z"/></symbol>
       <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11v-4a4 4 0 1 1 8 0v4"/></symbol>
     </defs>
   </svg>
@@ -96,7 +234,7 @@
   <header class="site-header" id="cabecera">
     <div class="container header-content">
       <a href="#inicio" class="brand-logo" aria-label="Estrategia Digital Estrella, ir al inicio">
-        <img src="assets/logo-rojo.png" alt="Estrategia Digital Estrella" class="site-logo-img" width="63" height="44">
+        <img src="assets/logo-rojo.png" alt="Logotipo de Estrategia Digital Estrella" class="site-logo-img" width="63" height="44">
       </a>
       <nav class="social-links" aria-label="Redes sociales">
         <a href="https://wa.me/34660337148?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20web%20o%20una%20landing%20page."
@@ -128,7 +266,7 @@
     <section class="hero-section section--cream" id="inicio" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-banner-wrapper">
-          <img src="assets/banner.png" alt="Estrategia Digital Estrella, diseño de páginas web y landing pages a medida" class="hero-banner-img" width="2172" height="724" fetchpriority="high">
+          <img src="assets/banner.png" alt="Ilustración de una fila de escritorios con ordenadores en la que un foco rojo ilumina el único monitor que muestra una gráfica de crecimiento" class="hero-banner-img" width="2172" height="724" fetchpriority="high">
         </div>
 
         <!-- Titular a todo el ancho -->
@@ -227,6 +365,10 @@
             <span class="icon-box" aria-hidden="true"><svg class="icon"><use href="#i-exit"/></svg></span>
             <p class="problem-text">No guía al visitante hacia el contacto: lo mira y se va.</p>
           </li>
+          <li class="card problem-card">
+            <span class="icon-box" aria-hidden="true"><svg class="icon"><use href="#i-search-off"/></svg></span>
+            <p class="problem-text">No está optimizada para SEO ni para GEO, así que no aparece en Google ni en las respuestas de herramientas de inteligencia artificial como ChatGPT, Gemini o Claude.</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -255,6 +397,7 @@
               <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Botones directos a WhatsApp, email o formulario</li>
               <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Diseño adaptado a móvil</li>
               <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Publicación con enlace propio</li>
+              <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Optimización para SEO y GEO</li>
             </ul>
             <a href="https://wa.me/34660337148?text=Hola%2C%20me%20interesa%20una%20landing%20page%20para%20mi%20negocio."
               class="btn-primary btn-full" target="_blank" rel="noopener noreferrer">
@@ -275,7 +418,7 @@
               <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Diseño con tu identidad de marca</li>
               <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Adaptada a todos los dispositivos</li>
               <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Conexión con tus redes sociales, WhatsApp y mapa de ubicación</li>
-              <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Estructura preparada para buscadores</li>
+              <li><span class="check-icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>Optimización para SEO y GEO</li>
             </ul>
             <a href="https://wa.me/34660337148?text=Hola%2C%20me%20interesa%20una%20p%C3%A1gina%20web%20para%20mi%20negocio."
               class="btn-primary btn-full" target="_blank" rel="noopener noreferrer">
@@ -294,7 +437,7 @@
       <div class="container">
         <div class="section-header">
           <p class="section-tag">VENTAJAS DECISIVAS</p>
-          <h2 class="section-title" id="ventajas-title">Tres razones para confiar tu web a Estrategia Digital Estrella</h2>
+          <h2 class="section-title" id="ventajas-title">Cuatro razones para confiar tu web a Estrategia Digital Estrella</h2>
         </div>
         <div class="benefits-grid">
           <article class="card benefit-card">
@@ -311,6 +454,11 @@
             <span class="icon-box icon-box--lg" aria-hidden="true"><svg class="icon"><use href="#i-devices"/></svg></span>
             <h3 class="card-title">Perfecta en cualquier pantalla</h3>
             <p class="card-text">Se ve y funciona bien en móvil, tablet y ordenador, y carga rápido.</p>
+          </article>
+          <article class="card benefit-card">
+            <span class="icon-box icon-box--lg" aria-hidden="true"><svg class="icon"><use href="#i-search-ai"/></svg></span>
+            <h3 class="card-title">Preparada para Google y para la inteligencia artificial</h3>
+            <p class="card-text">La optimizamos para SEO y GEO: así es más fácil que tus clientes te encuentren en Google y que herramientas de inteligencia artificial como ChatGPT, Gemini o Claude recomienden tu negocio.</p>
           </article>
         </div>
       </div>
@@ -636,7 +784,7 @@
   <footer class="site-footer">
     <div class="container">
       <a href="#inicio" class="footer-logo-link" aria-label="Estrategia Digital Estrella, volver al inicio">
-        <img src="assets/logo-negro.png" alt="Estrategia Digital Estrella" class="footer-logo-img" width="68" height="48" loading="lazy">
+        <img src="assets/logo-negro.png" alt="Logotipo de Estrategia Digital Estrella" class="footer-logo-img" width="68" height="48" loading="lazy">
       </a>
       <nav class="social-links footer-social-links" aria-label="Redes sociales">
         <a href="https://wa.me/34660337148?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20una%20web%20o%20una%20landing%20page."

@@ -1649,6 +1649,12 @@ a {
   .audience-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 
   .problem-card { padding: 26px 24px; }
+
+  /* Si el número de motivos es impar, el último ocupa las dos columnas */
+  .problem-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+  /* Ventajas: dos y dos desde tablet */
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
   .audience-card { padding: 28px 24px; }
 
   .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
@@ -1704,7 +1710,7 @@ a {
 
   .plans-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .benefits-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .benefits-grid { gap: 24px; }
   .benefit-card { padding: 40px 32px; }
 }
 
